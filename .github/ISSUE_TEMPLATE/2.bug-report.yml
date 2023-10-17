@@ -1,0 +1,55 @@
+name: Bug Report
+description: |
+  Report a bug on the website. Please fill out as much information as possible
+  so we can reproduce the bug.
+labels: 'template: bug'
+assignees:
+  - epic-vs-ikon-support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report. Please fill out as much information as possible so we can reproduce and fix the bug. If you are reporting incorrect information, please use the [Incorrect Information](https://github.com/epic-vs-ikon/Feedback/issues/new?assignees=epic-vs-ikon-support&labels=bug&template=1.incorrect-information.yml) report instead.
+
+        **Please note:** This report will be publicly visible.
+
+        ---
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: When I do A, B happens. I expected C to happen.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Device
+      description: What type of device are you using?
+      placeholder: ex. iPhone, Windows PC, Galaxy S8
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: What browser are you using?
+      options:
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Firefox
+        - In-app browser (ex. opened link within Facebook, Instagram, etc.)
+        - Other
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Browser version
+      description: 'Please specify the version of the browser you are using. For example: Safari 17.0 or Chrome 118.0.5993.70'
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Any additional information?
+      description: Please provide any additional information or context that may help us solve this issue.
+      placeholder: I noticed B only happens after I do D.
+    validations:
+      required: false
